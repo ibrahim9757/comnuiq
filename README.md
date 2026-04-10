@@ -2,8 +2,6 @@
 
 A production-ready, real-time chat application designed for seamless and secure communication. ComuniQ supports direct messaging, group channels, media sharing, and Google authentication. Built with the MERN stack and powered by Socket.IO for real-time capabilities.
 
-**[Live Demo](https://chat-comuniq.vercel.app)**
-
 ---
 
 ## Table of Contents
@@ -193,8 +191,8 @@ ComuniQ/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/ComuniQ.git
-cd ComuniQ
+git clone https://github.com/ibrahim9757/comnuiq.git
+cd comnuiq
 ```
 
 ### Install Dependencies
