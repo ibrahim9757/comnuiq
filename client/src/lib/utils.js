@@ -1,0 +1,28 @@
+import { clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
+import animationData from "../assets/lottie-json.json";
+
+export function cn(...inputs) {
+  return twMerge(clsx(inputs));
+}
+
+export const colors = [
+  "bg-[#712c4a57] text-[#ff006e] border-[1px] border-[#ff006faa]",
+  "bg-[#ff6d60a2a] text-[#ffd60a] border-[1px] border-[#ffd60abb]",
+  "bg-[#06d6a02a] text-[#06d6a0] border-[1px] border-[#06d6a0bb]",
+  "bg-[#4cc9f02a] text-[#4cc9f0] border-[1px] border-[#f4cc9f0bb]",
+];
+
+export const getColor = (color) => {
+  if (color >= 0 && color < colors.length) {
+    return colors[color];
+  }
+  return colors[0];
+  //by default if nothing selected
+};
+
+export const animationsDefaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: animationData,
+};
