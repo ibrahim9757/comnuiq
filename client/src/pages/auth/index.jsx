@@ -8,7 +8,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
 import { Loader2 } from "lucide-react";
-import { FcGoogle } from "react-icons/fc";
 
 function Auth() {
   const { setUserInfo } = useAppStore();
@@ -194,24 +193,6 @@ function Auth() {
             </div>
           </TabsContent>
         </Tabs>
-
-        <div className="mt-6 text-center text-gray-400 text-sm">
-          OR CONTINUE WITH
-        </div>
-
-        <div className="flex justify-center mt-4">
-          <Button
-            className="w-full bg-gray-700 hover:bg-gray-600 text-white py-3 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
-            onClick={() => {
-              const apiUrl =
-                import.meta.env.VITE_API_URL ?? import.meta.env.VITE_SERVER_URL;
-              window.location.href = `${apiUrl}/api/auth/google`;
-            }}
-          >
-            <FcGoogle className="w-5 h-5" />
-            <span>Google</span>
-          </Button>
-        </div>
       </div>
     </div>
   );
