@@ -1,5 +1,7 @@
 # ComuniQ
 
+Live: https://p2p-share-olive.vercel.app/
+
 A production-ready, real-time chat application designed for seamless and secure communication. ComuniQ supports direct messaging, group channels, media sharing, and Google authentication. Built with the MERN stack and powered by Socket.IO for real-time capabilities.
 
 ---
